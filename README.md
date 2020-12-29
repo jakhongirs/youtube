@@ -9,4 +9,4 @@ Technologies:
 - BEM
 
 This site was created to practice my skills.
-- Live site: youtube-redesign.netlify.app
+- Live site: https://youtube-redesign.netlify.app/
