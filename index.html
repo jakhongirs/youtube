@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Starter Scss</title>
+    <title>YouTube Redesign</title>
 </head>
 <body>
+    
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="site-header__container">
+            <button class="site-header__toggle-button"></button>
+            <a class="logo" href="index.html">
+                <img class="logo__img" src="img/logo-black.svg" alt="YouTube Logo" width="116" height="25">
+            </a>
+            
+            <form class="site-header__form" action="/" method="GET">
+                <input class="site-header__search-input" type="search" name="search" id="search-input" placeholder="Search" aria-label="Search">
+                <button class="site-header__search-button" type="submit"></button>
+            </form>
+            
+            <ul class="site-header__actions-list">
+                <li class="site-header__actions-item">
+                    <button class="site-header__actions-button site-header__live-button"></button>
+                </li>
+                
+                <li class="site-header__actions-item">
+                    <button class="site-header__actions-button site-header__apps-button"></button>
+                </li>
+                
+                <li class="site-header__actions-item">
+                    <a class="site-header__actions-button site-header__notification-button" href=""></a>
+                </li>
+                
+            </ul>
+            
+            <a class="site-header__actions-button site-header__profile-button" href=""></a>
+            
+        </div>
+    </header>
     
 </body>
 </html>

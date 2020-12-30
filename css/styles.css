@@ -364,15 +364,31 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 40px;
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 12px 16px;
+  }
 }
 
 .visually-hidden {
@@ -396,5 +412,192 @@ img {
 
 .button {
   text-decoration: none;
+}
+
+.site-header {
+  padding-right: 70px;
+}
+
+.site-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header__toggle-button {
+  min-width: 20px;
+  min-height: 17px;
+  margin-right: 28px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../img/hamburger.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.site-header__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 50%;
+  margin-right: 20px;
+}
+
+.site-header__search-input {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 22px;
+  border: none;
+  mix-blend-mode: normal;
+  background-color: rgba(235, 235, 235, 0.3);
+  color: rgba(48, 56, 76, 0.4);
+}
+
+.site-header__search-button {
+  position: absolute;
+  right: 17px;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-width: 19px;
+  min-height: 19px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Site Headr Actions */
+.site-header__actions-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  list-style-type: none;
+}
+
+.site-header__actions-item + .site-header__actions-item {
+  margin-left: 50px;
+}
+
+.site-header__actions-button {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.site-header__live-button {
+  min-width: 27px;
+  min-height: 20px;
+  background-image: url("../img/record.svg");
+}
+
+.site-header__apps-button {
+  min-width: 21px;
+  min-height: 21px;
+  background-image: url("../img/apps.svg");
+}
+
+.site-header__notification-button {
+  display: block;
+  min-width: 27px;
+  min-height: 32px;
+  background-image: url("../img/notification.svg");
+}
+
+.site-header__profile-button {
+  display: block;
+  min-width: 40px;
+  min-height: 40px;
+  background-image: url("../img/userpic.jpg");
+  border-radius: 50%;
+  margin-left: 45px;
+}
+
+@media screen and (max-width: 1024px) {
+  .site-header {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .site-header__actions-list {
+    display: none;
+  }
+  .site-header__toggle-button {
+    display: none;
+  }
+  .site-header__profile-button {
+    margin-left: auto;
+  }
+  .site-header__form {
+    width: 100%;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .site-header__search-input {
+    display: none;
+  }
+  .site-header__profile-button {
+    margin-left: 4px;
+  }
+  .site-header__search-button {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+  }
+}
+
+/* Retina Screen */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .site-header__profile-button {
+    background-image: url("../img/userpic@2x.jpg");
+  }
+}
+
+.logo {
+  display: block;
+  min-width: 116px;
+  min-height: 25px;
+  margin-right: 59px;
+  -webkit-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo__img {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo {
+    margin-right: 20px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
