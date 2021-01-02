@@ -208,7 +208,7 @@
             
             <section class="main-videos">
                 <div class="main-videos__container">
-                    <div class="main-videos__channels">
+                    <div class="main-videos__channels-wrapper">
                         <div class="main-videos__channels">
                             <div class="main-videos__channels-top">
                                 <h3 class="main-videos__heading-with-photo">Dollie Blair</h3>
@@ -310,21 +310,23 @@
                                 </div>
                             </div>
                             
-                            <ul class="main-videos__list main-videos__recommended-list">
-                                <li class="main-videos__item main-videos__recommended-item">
-                                    <a class="main-videos__link" href="">
-                                        <img class="main-videos__img main-videos__img-recommended" src="img/dude.jpg" alt="Videos Image" width="540" height="250" srcset="img/dude.jpg 1x, img/dude@2x.jpg 2x">
-                                        <h4 class="main-videos__title">Dude You Re Getting A Telescope</h4>
-                                        <p class="main-videos__time main-videos__time-recommended">3:40</p>
-                                        
-                                        <div class="main-videos__description">
-                                            <p class="main-videos__info">34k views  ·  5 months ago</p>
-                                            <a class="main-videos__author" href="">Dollie Blair</a>
-                                        </div>
-                                    </a>
-                                </li>
+                            <ul class="main-videos__list main-videos__recommended-list js-main-videos__recommended-list">
+                                <template class="js-template">
+                                    <li class="main-videos__item main-videos__recommended-item js-main-videos__recommended-item">
+                                        <a class="main-videos__link" href="">
+                                            <img class="main-videos__img main-videos__img-recommended js-main-videos__img-recommended" src="img/dude.jpg" alt="Videos Image" width="540" height="250" srcset="img/dude.jpg 1x, img/dude@2x.jpg 2x">
+                                            <h4 class="main-videos__title js-main-videos__title">Dude You Re Getting A Telescope</h4>
+                                            <p class="main-videos__time main-videos__time-recommended js-main-videos__time-recommended">3:40</p>
+                                            
+                                            <div class="main-videos__description">
+                                                <p class="main-videos__info js-main-videos__info">34k views  ·  5 months ago</p>
+                                                <a class="main-videos__author js-main-videos__author" href="">Dollie Blair</a>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </template>
                                 
-                                <li class="main-videos__item main-videos__recommended-item">
+                                <!-- <li class="main-videos__item main-videos__recommended-item">
                                     <a class="main-videos__link" href="">
                                         <img class="main-videos__img main-videos__img-recommended" src="img/gazing.jpg" alt="Videos Image" width="540" height="250" srcset="img/gazing.jpg 1x, img/gazing@2x.jpg 2x">
                                         <h4 class="main-videos__title">Moon Gazing</h4>
@@ -348,7 +350,7 @@
                                             <a class="main-videos__author" href="">Dollie Blair</a>
                                         </div>
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                         
